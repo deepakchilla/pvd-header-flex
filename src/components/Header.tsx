@@ -17,10 +17,10 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Services', href: '#' },
+    { name: 'About', href: '#about-section' },
+    { name: 'Services', href: '#services-section' },
     { name: 'Clients', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Contact', href: '#contact-section' },
   ];
 
   const toggleMobileMenu = () => {
@@ -56,6 +56,13 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 className="nav-item-hover font-inter text-base font-medium text-foreground px-3 py-2 rounded-md"
+                onClick={(e) => {
+                  if (item.href.startsWith('#')) {
+                    e.preventDefault();
+                    const element = document.querySelector(item.href);
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 {item.name}
               </a>
@@ -119,7 +126,16 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 className="block px-4 py-3 rounded-lg font-inter text-base font-medium text-foreground hover:text-primary hover:bg-muted transition-all duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                  setIsMobileMenuOpen(false);
+                  if (item.href.startsWith('#')) {
+                    e.preventDefault();
+                    setTimeout(() => {
+                      const element = document.querySelector(item.href);
+                      element?.scrollIntoView({ behavior: 'smooth' });
+                    }, 300);
+                  }
+                }}
               >
                 {item.name}
               </a>
