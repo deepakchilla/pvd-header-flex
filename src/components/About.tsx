@@ -44,7 +44,7 @@ const About = () => {
               
               <div className="space-y-6">
                 <p className="text-lg lg:text-xl font-inter text-black leading-relaxed">
-                  PVD Enterprises PVTLTD is committed to delivering innovative solutions to enterprises, 
+                  PVD Enterprises is committed to delivering innovative solutions to enterprises, 
                   with a focus on quality and customer satisfaction.
                 </p>
                 

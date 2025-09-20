@@ -33,7 +33,7 @@ const Header = () => {
         fixed top-0 left-0 right-0 z-50 transition-all duration-300 header-fade-in
         ${isScrolled 
           ? 'bg-background/95 backdrop-blur-md shadow-lg border-b border-border' 
-          : 'bg-transparent'
+          : 'bg-background/80 backdrop-blur-sm shadow-md'
         }
       `}
     >
@@ -43,9 +43,9 @@ const Header = () => {
           <div className="flex-shrink-0">
             <a 
               href="#" 
-              className="font-poppins font-bold text-xl lg:text-2xl text-primary hover:text-primary/80 transition-colors duration-300 text-shadow"
+              className="font-poppins font-bold text-xl lg:text-2xl text-primary hover:text-primary/80 transition-colors duration-300 drop-shadow-md"
             >
-              PVD Enterprises PVTLTD
+              PVD
             </a>
           </div>
 
@@ -55,7 +55,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="nav-item-hover font-inter text-base font-medium text-foreground px-3 py-2 rounded-md"
+                className="nav-item-hover font-inter text-base font-medium text-foreground hover:text-primary px-3 py-2 rounded-md drop-shadow-sm"
                 onClick={(e) => {
                   if (item.href.startsWith('#')) {
                     e.preventDefault();
@@ -109,7 +109,7 @@ const Header = () => {
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between p-4 border-b border-border">
             <span className="font-poppins font-bold text-lg text-primary">
-              PVD Enterprises
+              PVD
             </span>
             <button
               onClick={toggleMobileMenu}

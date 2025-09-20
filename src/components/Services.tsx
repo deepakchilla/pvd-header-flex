@@ -60,7 +60,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-32 bg-white" id="services-section">
+    <section className="py-20 lg:py-32 bg-white/70 backdrop-blur-md" id="services-section">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20">
@@ -81,15 +81,15 @@ const Services = () => {
                 key={index}
                 data-index={index}
                 className={`
-                  service-card group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl 
+                  service-card group bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl 
                   transition-all duration-500 hover:-translate-y-2 cursor-pointer
-                  border border-border/50 hover:border-primary/20
+                  border border-border/50 hover:border-primary/20 hover:bg-white/90
                   ${visibleCards[index] ? 'hero-fade-in' : 'opacity-0 translate-y-8'}
                 `}
               >
                 {/* Icon */}
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/20 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/30">
                     <Icon className="w-8 h-8 text-[hsl(var(--primary))] group-hover:text-[hsl(var(--accent))] transition-colors duration-300" />
                   </div>
                 </div>
