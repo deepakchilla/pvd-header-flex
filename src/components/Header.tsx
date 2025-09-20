@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import pvdLogo from '../assets/pvdlogo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,9 +44,13 @@ const Header = () => {
           <div className="flex-shrink-0">
             <a 
               href="#" 
-              className="font-poppins font-bold text-xl lg:text-2xl text-primary hover:text-primary/80 transition-colors duration-300 drop-shadow-md"
+              className="flex items-center transition-all duration-300"
             >
-              PVD
+              <img 
+                src={pvdLogo} 
+                alt="PVD Logo" 
+                className="h-10 lg:h-12 w-auto drop-shadow-md" 
+              />
             </a>
           </div>
 
@@ -108,9 +113,11 @@ const Header = () => {
         <div className="flex flex-col h-full">
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between p-4 border-b border-border">
-            <span className="font-poppins font-bold text-lg text-primary">
-              PVD
-            </span>
+            <img 
+              src={pvdLogo} 
+              alt="PVD Logo" 
+              className="h-8 w-auto" 
+            />
             <button
               onClick={toggleMobileMenu}
               className="p-2 rounded-md text-foreground hover:text-primary hover:bg-muted transition-colors duration-200"
