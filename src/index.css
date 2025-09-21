@@ -236,6 +236,15 @@ All colors MUST be HSL.
   .animate-fade-in {
     animation: fadeInUp 1s ease-out forwards;
   }
+
+  /* Floating WhatsApp Animation */
+  .animate-bounce-subtle {
+    animation: bounceSubtle 2s ease-in-out infinite;
+  }
+
+  .animate-bounce-subtle:hover {
+    animation: none;
+  }
 }
 
 @layer utilities {
@@ -296,5 +305,14 @@ All colors MUST be HSL.
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes bounceSubtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
   }
 }

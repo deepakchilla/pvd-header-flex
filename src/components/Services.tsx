@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { 
-  Building2, 
-  Lightbulb, 
-  Code, 
-  Headphones 
+  Home, 
+  Building, 
+  Hammer, 
+  Shield 
 } from 'lucide-react';
 
 const Services = () => {
@@ -38,24 +38,24 @@ const Services = () => {
 
   const services = [
     {
-      icon: Building2,
-      title: "Enterprise Solutions",
-      description: "Comprehensive enterprise-grade solutions designed to streamline operations, enhance productivity, and drive business growth across all departments."
+      icon: Home,
+      title: "Home Construction",
+      description: "Complete residential construction services including independent houses, luxury homes, and custom-designed living spaces with modern amenities and quality materials."
     },
     {
-      icon: Lightbulb,
-      title: "IT Consulting",
-      description: "Strategic IT consulting services to help businesses leverage technology effectively, optimize infrastructure, and make informed technology decisions."
+      icon: Building,
+      title: "Villa & Duplex Construction",
+      description: "Elegant villa and duplex home construction with spacious layouts, premium finishes, and architectural excellence tailored to your lifestyle and preferences."
     },
     {
-      icon: Code,
-      title: "Custom Software Development",
-      description: "Tailored software solutions built from the ground up to meet your specific business requirements, ensuring scalability and performance."
+      icon: Hammer,
+      title: "Commercial Construction",
+      description: "Professional commercial building services for offices, retail spaces, warehouses, and industrial facilities with focus on functionality and compliance."
     },
     {
-      icon: Headphones,
-      title: "Support & Maintenance",
-      description: "24/7 comprehensive support and maintenance services to ensure your systems run smoothly and efficiently with minimal downtime."
+      icon: Shield,
+      title: "Quality Assurance",
+      description: "470+ Quality (QASCON) checks performed by our team of experts ensuring the highest standards of construction quality and safety compliance."
     }
   ];
 
@@ -65,10 +65,10 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-poppins text-black mb-6">
-            Our Services
+            Home Construction Services
           </h2>
           <p className="text-lg lg:text-xl font-inter text-black max-w-3xl mx-auto leading-relaxed">
-            We offer comprehensive business solutions designed to help your enterprise thrive in today's competitive landscape.
+            Expertise in delivering top-notch construction with precision, quality, and transparency.
           </p>
         </div>
 

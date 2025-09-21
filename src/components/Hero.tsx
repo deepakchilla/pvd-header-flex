@@ -37,13 +37,13 @@ const Hero = () => {
             <div className={`space-y-6 ${isVisible ? 'hero-fade-in' : ''}`}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-poppins leading-tight" style={{ textShadow: '0px 2px 6px rgba(0, 0, 0, 0.4)' }}>
                 <span className="text-white block" style={{ textShadow: '0px 2px 6px rgba(0, 0, 0, 0.5)' }}>
-                  Empowering Your
+                  Build Your Dream Home
                 </span>
                 <span className="text-white block" style={{ textShadow: '0px 2px 6px rgba(0, 0, 0, 0.5)' }}>
-                  Business with
+                  with India's Leading
                 </span>
                 <span className="text-teal-500 block font-bold" style={{ textShadow: '0px 2px 6px rgba(0, 0, 0, 0.4)' }}>
-                  Innovative Solutions
+                  Construction Company
                 </span>
               </h1>
             </div>
@@ -51,8 +51,8 @@ const Hero = () => {
             {/* Subtitle */}
             <div className={`${isVisible ? 'hero-fade-in-delay' : ''}`}>
               <p className="text-lg sm:text-xl lg:text-2xl font-inter text-white leading-relaxed max-w-3xl" style={{ textShadow: '0px 2px 6px rgba(0, 0, 0, 0.4)' }}>
-                We deliver cutting-edge business solutions that drive growth, enhance efficiency, 
-                and transform your vision into reality. Partner with us to unlock your potential.
+                Combining creativity, quality, and dedication to turn your dream construction projects into success stories. 
+                We deliver high-quality, customized living spaces with modern design concepts and transparent construction processes.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ const Hero = () => {
                 className="px-8 py-4 text-lg font-semibold font-inter group"
                 style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.2)', textShadow: '0px 2px 4px rgba(0, 0, 0, 0.3)' }}
               >
-                Get Started Today
+                Start Your Construction
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
               
@@ -75,7 +75,7 @@ const Hero = () => {
                 style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.2)', textShadow: '0px 2px 4px rgba(0, 0, 0, 0.3)' }}
               >
                 <Play className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
-                Watch Demo
+                View Our Projects
               </Button>
             </div>
           </div>

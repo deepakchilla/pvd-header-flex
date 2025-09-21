@@ -17,11 +17,11 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#about-section' },
-    { name: 'Services', href: '#services-section' },
-    { name: 'Clients', href: '#' },
-    { name: 'Contact', href: '#contact-section' },
+    { name: 'Our Projects', href: '#projects-section' },
+    { name: 'Floor Plans', href: '#floor-plans-section' },
+    { name: 'Cost Estimator', href: '#cost-estimator-section' },
+    { name: 'How it works', href: '#how-it-works-section' },
+    { name: 'More', href: '#more-section' },
   ];
 
   const toggleMobileMenu = () => {
@@ -81,7 +81,7 @@ const Header = () => {
               className="px-6 py-2 rounded-lg font-inter font-medium text-base"
               size="lg"
             >
-              Get In Touch
+              Get Free Quote
             </Button>
           </div>
 
@@ -157,7 +157,7 @@ const Header = () => {
               size="lg"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Get In Touch
+              Get Free Quote
             </Button>
           </div>
         </div>

@@ -63,10 +63,10 @@ const Contact = () => {
         {/* Section Header */}
         <div className={`text-center mb-16 lg:mb-20 ${isVisible ? 'hero-fade-in' : ''}`}>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-poppins text-black mb-6">
-            Get In Touch
+            Get Your Construction Quote
           </h2>
           <p className="text-lg lg:text-xl font-inter text-black max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your business? Contact us today to discuss your requirements and discover how we can help you achieve your goals.
+            Ready to build your dream home? Contact us today for a free consultation and detailed quote for your construction project.
           </p>
         </div>
 
@@ -85,11 +85,11 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-[hsl(var(--primary))]" />
                   </div>
                   <div>
-                    <h4 className="font-semibold font-poppins text-black mb-2">Address</h4>
+                    <h4 className="font-semibold font-poppins text-black mb-2">Construction Office</h4>
                     <p className="text-black font-inter leading-relaxed">
                       Ho no 2-76-172/722, Dwarakanagar Phase - I,<br />
                       Chengicherla, Medipally Medchel Malkajgiri,<br />
-                      Telangana
+                      Telangana - 500092
                     </p>
                   </div>
                 </div>
@@ -100,12 +100,13 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-[hsl(var(--primary))]" />
                   </div>
                   <div>
-                    <h4 className="font-semibold font-poppins text-black mb-2">Mobile</h4>
+                    <h4 className="font-semibold font-poppins text-black mb-2">Construction Helpline</h4>
                     <p className="text-black font-inter">
                       <a href="tel:+919133279912" className="hover:text-[hsl(var(--accent))] transition-colors duration-300">
                         +91 9133279912
                       </a>
                     </p>
+                    <p className="text-sm text-gray-600 mt-1">Available 24/7 for construction inquiries</p>
                   </div>
                 </div>
 
@@ -115,12 +116,35 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-[hsl(var(--primary))]" />
                   </div>
                   <div>
-                    <h4 className="font-semibold font-poppins text-black mb-2">Email</h4>
+                    <h4 className="font-semibold font-poppins text-black mb-2">Project Inquiries</h4>
                     <p className="text-black font-inter">
-                      <a href="mailto:bhasker.ponnagante@gmail.com" className="hover:text-[hsl(var(--accent))] transition-colors duration-300">
-                        bhasker.ponnagante@gmail.com
+                      <a href="mailto:projects@pvdenterprises.com" className="hover:text-[hsl(var(--accent))] transition-colors duration-300">
+                        projects@pvdenterprises.com
                       </a>
                     </p>
+                    <p className="text-sm text-gray-600 mt-1">For construction quotes and consultations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Requirements Form */}
+            <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 border border-border/30 mb-8">
+              <h4 className="font-semibold font-poppins text-black mb-4">Quick Project Details</h4>
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div className="space-y-2">
+                  <span className="font-medium text-gray-700">Construction Type:</span>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-teal-100 text-teal-700 px-2 py-1 rounded text-xs">Home</span>
+                    <span className="bg-teal-100 text-teal-700 px-2 py-1 rounded text-xs">Villa</span>
+                    <span className="bg-teal-100 text-teal-700 px-2 py-1 rounded text-xs">Duplex</span>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <span className="font-medium text-gray-700">Project Size:</span>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs">1000-2000 sqft</span>
+                    <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs">2000+ sqft</span>
                   </div>
                 </div>
               </div>
@@ -128,7 +152,7 @@ const Contact = () => {
 
             {/* Business Hours */}
             <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 border border-border/30">
-              <h4 className="font-semibold font-poppins text-black mb-4">Business Hours</h4>
+              <h4 className="font-semibold font-poppins text-black mb-4">Construction Office Hours</h4>
               <div className="space-y-2 text-black font-inter">
                 <div className="flex justify-between">
                   <span>Monday - Friday</span>
@@ -140,15 +164,19 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-between">
                   <span>Sunday</span>
-                  <span>Closed</span>
+                  <span>Emergency Only</span>
+                </div>
+                <div className="pt-2 text-sm text-gray-600">
+                  Site visits available by appointment
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Construction Consultation Form */}
           <div className={`${isVisible ? 'hero-fade-in-delay-2' : ''}`}>
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-border/30">
+              <h3 className="text-2xl font-semibold font-poppins text-black mb-6">Get Your Free Construction Quote</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-black font-poppins font-medium">
@@ -184,7 +212,7 @@ const Contact = () => {
 
                 <div className="space-y-2">
                   <Label htmlFor="message" className="text-black font-poppins font-medium">
-                    Message *
+                    Construction Requirements *
                   </Label>
                   <Textarea
                     id="message"
@@ -194,7 +222,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     rows={5}
                     className="border-border/50 focus:border-primary transition-colors duration-300 resize-none"
-                    placeholder="Tell us about your project or requirements..."
+                    placeholder="Tell us about your construction project: type of building, size, budget range, timeline, and any specific requirements..."
                   />
                 </div>
 
@@ -204,7 +232,7 @@ const Contact = () => {
                   size="lg"
                   className="w-full hero-cta-hover px-8 py-4 text-lg font-semibold font-inter group"
                 >
-                  Send Message
+                  Get Free Construction Quote
                   <Send className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Button>
               </form>
